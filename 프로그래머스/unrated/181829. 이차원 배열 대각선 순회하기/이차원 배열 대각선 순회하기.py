@@ -3,6 +3,8 @@ def solution(board, k):
     for i in range(len(board)):
         for j in range(len(board[i])):
             if i + j <= k:
-                answer += board[i][j]
+                answer += board[i][j]  
+            else:
+                break
                 
     return answer
