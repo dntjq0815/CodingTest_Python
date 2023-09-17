@@ -1,8 +1,9 @@
 def solution(binomial):
     
-    a = int(binomial.split(' ')[0])
-    op = binomial.split(' ')[1]
-    b = int(binomial.split(' ')[2])
+    a, op, b = binomial.split()
+    
+    a = int(a)
+    b = int(b)
     
     return calc(a, op, b)
 
